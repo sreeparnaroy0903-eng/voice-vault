@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const pool = require("../config/db");
-const { encrypt, decrypt } = require("../utils/encryption");
+const pool = require("./config/db");
+const { encrypt, decrypt } = require("./encryption");
 
 router.post("/create", async (req, res) => {
   const { userId, content } = req.body;
